@@ -1,2 +1,3 @@
 .devcontainer/devcontainer.json
 .mypy_cache
+examples/__pycache__
