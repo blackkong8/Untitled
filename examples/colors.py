@@ -6,6 +6,6 @@ with ptg.YamlLoader() as loader, open("examples/common.yaml", "r") as config:
 
 
 with ptg.WindowManager() as manager:
-    window = ptg.Window("hello")
+    window = ptg.Window("Nasdaq")
     namespace.apply_to(window)
     manager += window

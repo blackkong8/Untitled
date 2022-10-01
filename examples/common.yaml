@@ -1,7 +1,7 @@
 markup:
-  foreground: '#FFFFFF'
-  background: '@60'
-  accent: '210'
+  foreground: '#ffffff'
+  background: '@232'
+  accent: '232'
 
   title: background accent
 
