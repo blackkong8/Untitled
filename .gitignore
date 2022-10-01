@@ -1,1 +1,2 @@
 .devcontainer/devcontainer.json
+.mypy_cache
