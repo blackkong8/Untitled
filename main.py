@@ -13,5 +13,5 @@ with ptg.WindowManager() as manager:
     manager.layout.add_slot("Body")
     manager.add(
         ptg.Window(
-            "[bold]The current Time is:[/]\n\n[!time 75]%c", box="EMPTY")
+            "The current Time is:[/]\n\n[!time 75]%c", box="EMPTY")
     )
