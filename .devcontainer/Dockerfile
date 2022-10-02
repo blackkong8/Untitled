@@ -22,3 +22,5 @@ RUN if [ "${NODE_VERSION}" != "none" ]; then su vscode -c "umask 0002 && . /usr/
 
 RUN pip install pytermgui
 RUN pip install PyYAML
+
+RUN pip install textual
