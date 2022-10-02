@@ -33,7 +33,7 @@ class MyApp(App):
                 readme = Markdown(fh.read(), hyperlinks=True)
             await body.update(readme)
 
-        await self.call_later(get_markdown, "richreadme.md")
+        await self.call_later(get_markdown, "textual/examples/richreadme.md")
 
 
 MyApp.run(title="Simple App", log="textual.log")
