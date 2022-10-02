@@ -1,5 +1,4 @@
 .devcontainer/devcontainer.json
 .mypy_cache
-examples/__pycache__
 layouts.svg
 textual.log
