@@ -1,4 +1,3 @@
-from ctypes import alignment
 from textual.app import App
 from textual import events
 
