@@ -24,4 +24,4 @@ RUN pip install pytermgui
 RUN pip install PyYAML
 
 RUN pip install textual
-Run pip install pyfiglet
+RUN pip install pyfiglet
