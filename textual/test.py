@@ -9,7 +9,12 @@ from textual.reactive import Reactive
 from datetime import datetime
 
 from rich.align import Align
+from rich.syntax import Syntax
 
+
+class Code(Widget):
+    def render(self):
+        return Syntax('print("Hello, world!")', "python", theme="monokai", line_numbers=True)
 
 class Clock(Widget):
 
@@ -48,7 +53,7 @@ class SimpleApp(App):
 
     async def on_mount(self) -> None:
         await self.view.dock(Placeholder(name="hi1"), Placeholder(name="hi2"), edge="left", size=20)
-        await self.view.dock(Placeholder(), Placeholder(), Placeholder(), Clock(), edge="top")
+        await self.view.dock(Placeholder(), Placeholder(), Code(), Clock(), edge="top")
 
 
 SimpleApp.run(log="textual.log")
