@@ -31,17 +31,20 @@ class Clock(Widget):
 
     def on_leave(self) -> None:
         self.mouse_over = False
-    
+
     async def on_mouse_down(self, event: events.MouseDown) -> None:
         self.mouse_click = True
         return await super().on_mouse_down(event)
-    
+
     async def on_mouse_up(self, event: events.MouseUp) -> None:
         self.mouse_click = False
         return await super().on_mouse_up(event)
 
 
 class SimpleApp(App):
+
+    async def on_load(self, event):
+        await self.bind("q", "quit")
 
     async def on_mount(self) -> None:
         await self.view.dock(Placeholder(name="hi1"), Placeholder(name="hi2"), edge="left", size=20)
